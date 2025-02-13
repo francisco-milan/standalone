@@ -8,6 +8,12 @@ All abap2UI5 artifacts are combined into a single HTTP handler implementation as
 3. Add your abap2UI5 app as a local class and start it via your new HTTP endpoint.
 4. Alternatively, pull this repository using abapGit.
 
+
+#### Approach
+
+<img width="500" alt="Screenshot 2025-02-13 at 13 24 18" src="https://github.com/user-attachments/assets/5fcc56a8-8e2c-41b2-84b3-e50242ff648c" />
+
+
 #### Persistence
 To avoid any side effects with other abap2UI5 installations, this version uses the table z2ui5_t_99 for persistence. You can either pull this repository or manually create the following table in your system:
 ```cds
