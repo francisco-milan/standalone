@@ -1,4 +1,4 @@
-# standalone
+# build standalone
 All abap2UI5 artifacts are combined into a single HTTP handler implementation. This approach makes your app completely independent of the rest of the system.
 
 #### Start
