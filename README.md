@@ -17,7 +17,7 @@ All abap2UI5 artifacts are combined into a single HTTP handler implementation as
 #### Persistence
 To avoid any side effects with other abap2UI5 installations, this version uses the table z2ui5_t_99 for persistence. You can either pull this repository or manually create the following table in your system:
 ```cds
-@EndUserText.label : 'abap2ui5 standalone'
+@EndUserText.label : 'abap2ui5 local'
 @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
 @AbapCatalog.tableCategory : #TRANSPARENT
 @AbapCatalog.deliveryClass : #A
