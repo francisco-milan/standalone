@@ -4,6 +4,7 @@ All abap2UI5 artifacts are combined into a single HTTP handler implementation. T
 #### Start
 
 App: `z2ui5_cl_my_standalone_app`
+
 API: `/sap/bc/z2ui5standalone?sap-client=001&app_start=z2ui5_cl_my_standalone_app`
 
 
