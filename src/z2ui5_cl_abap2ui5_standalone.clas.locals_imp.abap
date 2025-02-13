@@ -809,7 +809,7 @@ INTERFACE z2ui5_if_core_types.
       r_data             TYPE REF TO data,
     END OF ty_s_actual.
 
-  TYPES ty_s_db TYPE z2ui5_t_01.
+  TYPES ty_s_db TYPE z2ui5_t_99.
 
 ENDINTERFACE.
 
@@ -21708,7 +21708,7 @@ CLASS z2ui5_cl_core_srv_draft IMPLEMENTATION.
     DATA(lv_four_hours_ago) = z2ui5_cl_util=>time_substract_seconds( time    = z2ui5_cl_util=>time_get_timestampl( )
                                                                      seconds = 60 * 60 * 4 ).
 
-    DELETE FROM z2ui5_t_01 WHERE timestampl < @lv_four_hours_ago.
+    DELETE FROM z2ui5_t_99 WHERE timestampl < @lv_four_hours_ago.
     COMMIT WORK.
 
   ENDMETHOD.
@@ -21725,7 +21725,7 @@ CLASS z2ui5_cl_core_srv_draft IMPLEMENTATION.
                                                       timestampl        = z2ui5_cl_util=>time_get_timestampl( )
                                                       data              = model_xml ).
 
-    MODIFY z2ui5_t_01 FROM @ls_db.
+    MODIFY z2ui5_t_99 FROM @ls_db.
     IF sy-subrc <> 0.
       RAISE EXCEPTION TYPE z2ui5_cx_util_error
         EXPORTING
@@ -21739,14 +21739,14 @@ CLASS z2ui5_cl_core_srv_draft IMPLEMENTATION.
 
     IF check_load_app = abap_true.
 
-      SELECT SINGLE * FROM z2ui5_t_01
+      SELECT SINGLE * FROM z2ui5_t_99
         WHERE id = @id
         INTO @result ##SUBRC_OK.
 
     ELSE.
 
       SELECT SINGLE id, id_prev, id_prev_app, id_prev_app_stack
-        FROM z2ui5_t_01
+        FROM z2ui5_t_99
         WHERE id = @id
         INTO CORRESPONDING FIELDS OF @result ##SUBRC_OK.
 
@@ -21778,7 +21778,7 @@ CLASS z2ui5_cl_core_srv_draft IMPLEMENTATION.
   METHOD count_entries.
 
     SELECT COUNT( * )
-      FROM z2ui5_t_01
+      FROM z2ui5_t_99
       INTO @result.
 
   ENDMETHOD.
