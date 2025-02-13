@@ -1,4 +1,4 @@
-# standalone-test
+# standalone
 Running abap2UI5 in a single HTTP Handler.
 
 #### Start
