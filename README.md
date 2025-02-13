@@ -37,4 +37,4 @@ define table z2ui5_t_99 {
 
 #### Info
 * HTTP API: `/sap/bc/z2ui5standalone?sap-client=001&app_start=z2ui5_cl_my_standalone_app`
-* Credits: Created with and powered by the fantastic tool [abapmerge](https://github.com/larshp/abapmerge)
+* Credits: Created with the fantastic tool [abapmerge](https://github.com/larshp/abapmerge)
