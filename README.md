@@ -28,7 +28,6 @@ define table z2ui5_t_99 {
   id_prev_app_stack : abap.char(32);
   timestampl        : timestampl;
   data              : abap.string(0);
-
 }
 ```
 
