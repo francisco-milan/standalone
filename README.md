@@ -10,9 +10,7 @@ All abap2UI5 artifacts are combined into a single HTTP handler implementation as
 
 
 #### Approach
-
 <img width="500" alt="Screenshot 2025-02-13 at 13 24 18" src="https://github.com/user-attachments/assets/5fcc56a8-8e2c-41b2-84b3-e50242ff648c" />
-
 
 #### Persistence
 To avoid any side effects with other abap2UI5 installations, this version uses the table z2ui5_t_99 for persistence. You can either pull this repository or manually create the following table in your system:
@@ -29,7 +27,6 @@ define table z2ui5_t_99 {
   id_prev_app       : abap.char(32);
   id_prev_app_stack : abap.char(32);
   timestampl        : timestampl;
-  uname             : abap.char(20);
   data              : abap.string(0);
 
 }
