@@ -1,4 +1,4 @@
-# build-local
+# abap2UI5-local
 All abap2UI5 artifacts are combined into a single HTTP handler implementation as local classes. This approach makes your app completely independent of the rest of the system or any other abap2UI5 installation.
 
 #### Installation
