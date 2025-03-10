@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DEVC>
-    <CTEXT>abap2ui5 standalone</CTEXT>
+    <CTEXT>abap2UI5-local</CTEXT>
    </DEVC>
   </asx:values>
  </asx:abap>
