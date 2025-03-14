@@ -6,7 +6,7 @@ All abap2UI5 artifacts are combined into a single HTTP handler implementation as
 1. Create a new HTTP handler in your system.
 2. Copy & paste the handler class from this repository.
 3. Add your abap2UI5 app as a local class and start it via your new HTTP endpoint.
-4. Alternatively, pull this repository using abapGit.
+4. Alternatively, pull this repository using abapGit and start via `/sap/bc/z2ui5standalone?sap-client=001&app_start=z2ui5_cl_my_standalone_app`
 
 
 #### Approach
@@ -15,7 +15,7 @@ All abap2UI5 artifacts are combined into a single HTTP handler implementation as
 #### Persistence
 To avoid any side effects with other abap2UI5 installations, this version uses the table z2ui5_t_99 for persistence. You can either pull this repository or manually create the following table in your system:
 ```cds
-@EndUserText.label : 'abap2UI5 local'
+@EndUserText.label : 'abap2UI5-local'
 @AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
 @AbapCatalog.tableCategory : #TRANSPARENT
 @AbapCatalog.deliveryClass : #A
@@ -31,12 +31,12 @@ define table z2ui5_t_99 {
 }
 ```
 
-#### Info
-* HTTP API: `/sap/bc/z2ui5standalone?sap-client=001&app_start=z2ui5_cl_my_standalone_app`
-* Credits: Created with the fantastic tool [abapmerge](https://github.com/larshp/abapmerge)
+#### Credits
+* Created with the fantastic tool [abapmerge](https://github.com/larshp/abapmerge)
+* `702` branch created with [abaplint](https://abaplint.org)
 
 #### Compatibility
-This repository works in both ABAO For Cloud and Standard ABAP. For old releases use the branch `702`.
+This repository works in both ABAP for Cloud and Standard ABAP. For old releases use the branch `702`.
 
 #### Issues
 For bug reports or feature requests, please open an issue in the [abap2UI5 repository.](https://github.com/abap2UI5/abap2UI5/issues)
