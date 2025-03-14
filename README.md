@@ -6,7 +6,7 @@ All abap2UI5 artifacts are combined into a single HTTP handler implementation as
 1. Create a new HTTP handler in your system.
 2. Copy & paste the handler class from this repository.
 3. Add your abap2UI5 app as a local class and start it via your new HTTP endpoint.
-4. Alternatively, pull this repository using abapGit and start via `/sap/bc/z2ui5standalone?sap-client=001&app_start=z2ui5_cl_my_standalone_app`
+4. Alternatively, pull this repository using abapGit and start via `/sap/bc/z2ui5standalone?app_start=z2ui5_cl_my_standalone_app`
 
 
 #### Approach
@@ -32,7 +32,7 @@ define table z2ui5_t_99 {
 ```
 
 #### Credits
-* Created with the fantastic tool [abapmerge](https://github.com/larshp/abapmerge)
+* Merged files created with [abapmerge](https://github.com/larshp/abapmerge)
 * `702` branch created with [abaplint](https://abaplint.org)
 
 #### Compatibility
